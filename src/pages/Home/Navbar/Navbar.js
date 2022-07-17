@@ -19,7 +19,7 @@ const Navbar = () => {
   }
 
   return (
-    <header id="header" className="fixed-top ">
+    <header id="header" className="fixed-top" data-testid="Navbar">
       <div className="container d-flex align-items-center">
 
         <a href="index.html" className="logo me-auto">
