@@ -29,33 +29,33 @@ const Navbar = () => {
         <nav id="navbar" className="navbar">
           <ul>
             <li>
-              <a className="scrollto active" href="#hero">
+              <a className="nav-link scrollto active" href="#hero">
                 Home
               </a>
             </li>
             <li>
-              <a className="scrollto" href="#about">
+              <a className="nav-link scrollto" href="#about">
                 About
               </a>
             </li>
             <li>
-              <a className="scrollto" href="#services">
+              <a className="nav-link scrollto" href="#services">
                 Services
               </a>
             </li>
             <li>
-              <a className="scrollto" href="#portfolio">
+              <a className="nav-link scrollto" href="#portfolio">
                 Portfolio
               </a>
             </li>
             <li>
-              <a className="scrollto" href="#team">
+              <a className="nav-link scrollto" href="#team">
                 Team
               </a>
             </li>
             <li className="dropdown">
-              <a href="#">
-                <span>Drop Down</span> <i className="bi bi-chevron-down"></i>
+              <a className="nav-link" href="#">
+                <span>Drop Down V</span> <i className="bi bi-chevron-down"></i>
               </a>
               <ul>
                 <li>
@@ -96,12 +96,12 @@ const Navbar = () => {
               </ul>
             </li>
             <li>
-              <a className=" scrollto" href="#contact">
+              <a className="nav-link scrollto" href="#contact">
                 Contact
               </a>
             </li>
             <li>
-              <a className="getstarted scrollto" href="#about">
+              <a className="nav-link getstarted scrollto" href="#about">
                 Get Started
               </a>
             </li>
