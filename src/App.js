@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import Hero from './pages/Home/Hero/Hero';
 import AboutUs from './pages/Home/AboutUs/AboutUs';
+import Services from './pages/Home/Services/Services';
 
 
 
@@ -14,6 +15,7 @@ function App() {
       <Navbar />
       <Hero />
       <AboutUs />
+      <Services />
     </div>
   );
 }
