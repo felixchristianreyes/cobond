@@ -8,9 +8,9 @@ const Navbar = () => {
   if (selectHeader) {
     const headerScrolled = () => {
       if (window.scrollY > 100) {
-        selectHeader.classList.add("header-scrolled");
+        selectHeader.classNameList.add("header-scrolled");
       } else {
-        selectHeader.classList.remove("header-scrolled");
+        selectHeader.classNameList.remove("header-scrolled");
       }
     };
     window.addEventListener("load", headerScrolled);
@@ -18,52 +18,52 @@ const Navbar = () => {
   }
 
   return (
-    <header id="header" class="fixed-top ">
-      <div class="container d-flex align-items-center">
+    <header id="header" className="fixed-top ">
+      <div className="container d-flex align-items-center">
 
-        <a href="index.html" class="logo me-auto">
-          <img src="assets/img/logo.png" alt="" class="img-fluid" />tests
+        <a href="index.html" className="logo me-auto">
+          <img src="assets/img/logo.png" alt="" className="img-fluid" />tests
         </a>
 
-        <nav id="navbar" class="navbar">
+        <nav id="navbar" className="navbar">
           <ul>
             <li>
-              <a class="scrollto active" href="#hero">
+              <a className="scrollto active" href="#hero">
                 Home
               </a>
             </li>
             <li>
-              <a class="scrollto" href="#about">
+              <a className="scrollto" href="#about">
                 About
               </a>
             </li>
             <li>
-              <a class="scrollto" href="#services">
+              <a className="scrollto" href="#services">
                 Services
               </a>
             </li>
             <li>
-              <a class="scrollto" href="#portfolio">
+              <a className="scrollto" href="#portfolio">
                 Portfolio
               </a>
             </li>
             <li>
-              <a class="scrollto" href="#team">
+              <a className="scrollto" href="#team">
                 Team
               </a>
             </li>
-            <li class="dropdown">
+            <li className="dropdown">
               <a href="#">
-                <span>Drop Down</span> <i class="bi bi-chevron-down"></i>
+                <span>Drop Down</span> <i className="bi bi-chevron-down"></i>
               </a>
               <ul>
                 <li>
                   <a href="#">Drop Down 1</a>
                 </li>
-                <li class="dropdown">
+                <li className="dropdown">
                   <a href="#">
                     <span>Deep Drop Down</span>{" "}
-                    <i class="bi bi-chevron-right"></i>
+                    <i className="bi bi-chevron-right"></i>
                   </a>
                   <ul>
                     <li>
@@ -95,17 +95,17 @@ const Navbar = () => {
               </ul>
             </li>
             <li>
-              <a class=" scrollto" href="#contact">
+              <a className=" scrollto" href="#contact">
                 Contact
               </a>
             </li>
             <li>
-              <a class="getstarted scrollto" href="#about">
+              <a className="getstarted scrollto" href="#about">
                 Get Started
               </a>
             </li>
           </ul>
-          <i class="bi bi-list mobile-nav-toggle"></i>
+          <i className="bi bi-list mobile-nav-toggle"></i>
         </nav>
       </div>
     </header>
