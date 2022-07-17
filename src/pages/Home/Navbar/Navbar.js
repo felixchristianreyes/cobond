@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import select from "../tools";
+import PropTypes from 'prop-types';
 import "./Navbar.css";
 
 const Navbar = () => {
