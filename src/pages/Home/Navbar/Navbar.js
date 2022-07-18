@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import "./Navbar.css";
+import logo from "../../../images/gusbampslogo.png";
 
 const Navbar = () => {
   // let selectHeader = select("#header");
@@ -19,9 +20,9 @@ const Navbar = () => {
   return (
     <header id="header" className="fixed-top" data-testid="Navbar">
       <div className="container d-flex align-items-center">
-
+      
         <a href="index.html" className="logo me-auto">
-          <img src="assets/img/logo.png" alt="logo" className="img-fluid" />
+          <img src={ logo } alt="logo" className="img-fluid" />
         </a>
 
         <nav id="navbar" className="navbar">
