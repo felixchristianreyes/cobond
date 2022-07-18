@@ -2,27 +2,44 @@
 import React from "react";
 import "./Navbar.css";
 import logo from "../../../images/gusbampslogo.png";
+import { useEffect, useState } from "react";
+
+function classNames(...classes) {
+  return classes.filter(Boolean).join(" ");
+}
+
+const useScrollPosition = () => {
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  useEffect(() => {
+    const updatePosition = () => {
+      setScrollPosition(window.pageYOffset);
+    };
+
+    window.addEventListener("scroll", updatePosition);
+
+    updatePosition();
+
+    return () => window.removeEventListener("scroll", updatePosition);
+  }, []);
+  return scrollPosition;
+};
 
 const Navbar = () => {
-  // let selectHeader = select("#header");
-  // if (selectHeader) {
-  //   const headerScrolled = () => {
-  //     if (window.scrollY > 100) {
-  //       selectHeader.classNameList.add("header-scrolled");
-  //     } else {
-  //       selectHeader.classNameList.remove("header-scrolled");
-  //     }
-  //   };
-  //   window.addEventListener("load", headerScrolled);
-  //   onscroll(document, headerScrolled);
-  // }
+  const scrollPosition = useScrollPosition();
+  console.log(scrollPosition);
 
   return (
-    <header id="header" className="fixed-top" data-testid="Navbar">
+    <header
+      id="header"
+      className={classNames(
+        scrollPosition > 100 ? "header-scrolled fixed-top" : "fixed-top"
+      )}
+      data-testid="Navbar"
+    >
       <div className="container d-flex align-items-center">
-      
         <a href="index.html" className="logo me-auto">
-          <img src={ logo } alt="logo" className="img-fluid" />
+          <img src={logo} alt="logo" className="img-fluid" />
         </a>
 
         <nav id="navbar" className="navbar">

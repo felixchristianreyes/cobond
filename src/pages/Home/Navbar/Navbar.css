@@ -6,7 +6,7 @@
   z-index: 997;
   padding: 15px 0;
 }
-#header.header-scrolled, #header.header-inner-pages {
+.header-scrolled {
   background: rgba(40, 58, 90, 0.9);
 }
 #header .logo {
