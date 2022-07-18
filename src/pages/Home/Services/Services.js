@@ -6,7 +6,7 @@ const Services = () => (
   <section id="services" className="services section-bg" data-testid="Services">
     <div className="container" data-aos="fade-up">
       <div className="section-title">
-        <h2>Services</h2>
+        <h2>Features</h2>
         <p>
           Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
           aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos

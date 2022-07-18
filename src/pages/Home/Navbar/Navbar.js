@@ -1,13 +1,15 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import "./Navbar.css";
-import logo from "../../../images/gusbampslogo.png";
 import { useEffect, useState } from "react";
+import { FaBars, FaChevronDown } from "react-icons/fa";
 
+//joins
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
+//get window offsetY position
 const useScrollPosition = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
 
@@ -26,6 +28,9 @@ const useScrollPosition = () => {
 };
 
 const Navbar = () => {
+  //activate sidebar
+
+  //console.logs position of window.offsetY
   const scrollPosition = useScrollPosition();
   console.log(scrollPosition);
 
@@ -39,7 +44,7 @@ const Navbar = () => {
     >
       <div className="container d-flex align-items-center">
         <a href="index.html" className="logo me-auto">
-          <img src={logo} alt="logo" className="img-fluid" />
+          GUSBAMPS
         </a>
 
         <nav id="navbar" className="navbar">
@@ -56,48 +61,22 @@ const Navbar = () => {
             </li>
             <li>
               <a className="nav-link scrollto" href="#services">
-                Services
+                Features
               </a>
             </li>
             <li className="dropdown">
               <a className="nav-link" href="#">
-                <span>Community</span> <i className="bi bi-chevron-down"></i>
+                <span>Community </span> <FaChevronDown />
               </a>
               <ul>
                 <li>
-                  <a href="#">Drop Down 1</a>
-                </li>
-                <li className="dropdown">
-                  <a href="#">
-                    <span>Deep Drop Down</span>{" "}
-                    <i className="bi bi-chevron-right"></i>
-                  </a>
-                  <ul>
-                    <li>
-                      <a href="#">Deep Drop Down 1</a>
-                    </li>
-                    <li>
-                      <a href="#">Deep Drop Down 2</a>
-                    </li>
-                    <li>
-                      <a href="#">Deep Drop Down 3</a>
-                    </li>
-                    <li>
-                      <a href="#">Deep Drop Down 4</a>
-                    </li>
-                    <li>
-                      <a href="#">Deep Drop Down 5</a>
-                    </li>
-                  </ul>
+                  <a href="#">Join Discord</a>
                 </li>
                 <li>
-                  <a href="#">Drop Down 2</a>
+                  <a href="#">Provide toilet data</a>
                 </li>
                 <li>
-                  <a href="#">Drop Down 3</a>
-                </li>
-                <li>
-                  <a href="#">Drop Down 4</a>
+                  <a href="#">Contact</a>
                 </li>
               </ul>
             </li>
@@ -107,7 +86,7 @@ const Navbar = () => {
               </a>
             </li>
           </ul>
-          <i className="bi bi-list mobile-nav-toggle"></i>
+          <FaBars className="bi bi-list mobile-nav-toggle" />
         </nav>
       </div>
     </header>

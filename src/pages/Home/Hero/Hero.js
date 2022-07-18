@@ -13,12 +13,12 @@ const Hero = () => (
         >
           <h1>One-stop solution for those goosebumps</h1>
           <h2>
-            User generated public restrooms. <br />
-            For people who have calls with nature
+            Community generated public restrooms. <br />
+            For people who have frequent calls with nature.
           </h2>
           <div className="d-flex justify-content-center justify-content-lg-start">
             <a href="#about" className="nav-link btn-get-started scrollto">
-              Find Nearest
+              Get Started
             </a>
           </div>
         </div>
