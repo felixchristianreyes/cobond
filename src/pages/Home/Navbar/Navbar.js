@@ -42,16 +42,6 @@ const Navbar = () => {
                 Services
               </a>
             </li>
-            <li>
-              <a className="nav-link scrollto" href="#portfolio">
-                Portfolio
-              </a>
-            </li>
-            <li>
-              <a className="nav-link scrollto" href="#team">
-                Team
-              </a>
-            </li>
             <li className="dropdown">
               <a className="nav-link" href="#">
                 <span>Drop Down V</span> <i className="bi bi-chevron-down"></i>
