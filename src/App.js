@@ -6,6 +6,7 @@ import Hero from './pages/Home/Hero/Hero';
 import AboutUs from './pages/Home/AboutUs/AboutUs';
 import Services from './pages/Home/Services/Services';
 import Newsletter from './pages/Home/Newsletter/Newsletter';
+import Footer from './pages/Home/Footer/Footer';
 
 
 
@@ -18,6 +19,7 @@ function App() {
       <AboutUs />
       <Services />
       <Newsletter />
+      <Footer />
     </div>
   );
 }
