@@ -5,6 +5,7 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 import Hero from './pages/Home/Hero/Hero';
 import AboutUs from './pages/Home/AboutUs/AboutUs';
 import Services from './pages/Home/Services/Services';
+import Newsletter from './pages/Home/Newsletter/Newsletter';
 
 
 
@@ -16,6 +17,7 @@ function App() {
       <Hero />
       <AboutUs />
       <Services />
+      <Newsletter />
     </div>
   );
 }
