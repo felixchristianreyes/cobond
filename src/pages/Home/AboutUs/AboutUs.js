@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import "./AboutUs.css";
+import infographic from "../../../images/infographic.jpg";
 
 const AboutUs = () => (
   <section id="about" className="about" data-testid="AboutUs">
@@ -42,6 +43,9 @@ const AboutUs = () => (
             Learn More
           </a>
         </div>
+      </div>
+      <div className="row m-0 mt-5 infographic">
+        <img src={infographic} alt="5 Stages of Grief Infographic"></img>
       </div>
     </div>
   </section>
