@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import "./Footer.css";
+import { BsTwitter, BsInstagram, BsFacebook, BsLinkedin } from "react-icons/bs";
 
 const Footer = () => (
   <footer id="footer">
@@ -79,19 +80,24 @@ const Footer = () => (
             </p>
             <div className="social-links mt-3">
               <a href="#" className="twitter">
-                <i className="bx bxl-twitter"></i>
+                <i className="bx bxl-twitter">
+                  <BsTwitter />
+                </i>
               </a>
               <a href="#" className="facebook">
-                <i className="bx bxl-facebook"></i>
+                <i className="bx bxl-facebook">
+                  <BsFacebook />
+                </i>
               </a>
               <a href="#" className="instagram">
-                <i className="bx bxl-instagram"></i>
-              </a>
-              <a href="#" className="google-plus">
-                <i className="bx bxl-skype"></i>
+                <i className="bx bxl-instagram">
+                  <BsInstagram />
+                </i>
               </a>
               <a href="#" className="linkedin">
-                <i className="bx bxl-linkedin"></i>
+                <i className="bx bxl-linkedin">
+                  <BsLinkedin />
+                </i>
               </a>
             </div>
           </div>
