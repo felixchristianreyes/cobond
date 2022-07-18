@@ -85,11 +85,6 @@ const Navbar = () => {
               </ul>
             </li>
             <li>
-              <a className="nav-link scrollto" href="#contact">
-                Contact
-              </a>
-            </li>
-            <li>
               <a className="nav-link getstarted scrollto" href="#about">
                 Get Started
               </a>
