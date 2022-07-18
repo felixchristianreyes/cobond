@@ -1,28 +1,27 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
-import select from "../tools";
 import "./Navbar.css";
 
 const Navbar = () => {
-  let selectHeader = select("#header");
-  if (selectHeader) {
-    const headerScrolled = () => {
-      if (window.scrollY > 100) {
-        selectHeader.classNameList.add("header-scrolled");
-      } else {
-        selectHeader.classNameList.remove("header-scrolled");
-      }
-    };
-    window.addEventListener("load", headerScrolled);
-    onscroll(document, headerScrolled);
-  }
+  // let selectHeader = select("#header");
+  // if (selectHeader) {
+  //   const headerScrolled = () => {
+  //     if (window.scrollY > 100) {
+  //       selectHeader.classNameList.add("header-scrolled");
+  //     } else {
+  //       selectHeader.classNameList.remove("header-scrolled");
+  //     }
+  //   };
+  //   window.addEventListener("load", headerScrolled);
+  //   onscroll(document, headerScrolled);
+  // }
 
   return (
     <header id="header" className="fixed-top" data-testid="Navbar">
       <div className="container d-flex align-items-center">
 
         <a href="index.html" className="logo me-auto">
-          <img src="assets/img/logo.png" alt="" className="img-fluid" />tests
+          <img src="assets/img/logo.png" alt="logo" className="img-fluid" />
         </a>
 
         <nav id="navbar" className="navbar">
@@ -44,7 +43,7 @@ const Navbar = () => {
             </li>
             <li className="dropdown">
               <a className="nav-link" href="#">
-                <span>Drop Down V</span> <i className="bi bi-chevron-down"></i>
+                <span>Community</span> <i className="bi bi-chevron-down"></i>
               </a>
               <ul>
                 <li>
