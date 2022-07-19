@@ -1,38 +1,14 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import "./Navbar.css";
-import { useEffect, useState } from "react";
 import { FaBars, FaChevronDown } from "react-icons/fa";
-
-//joins
-function classNames(...classes) {
-  return classes.filter(Boolean).join(" ");
-}
-
-//get window offsetY position
-const useScrollPosition = () => {
-  const [scrollPosition, setScrollPosition] = useState(0);
-
-  useEffect(() => {
-    const updatePosition = () => {
-      setScrollPosition(window.pageYOffset);
-    };
-
-    window.addEventListener("scroll", updatePosition);
-
-    updatePosition();
-
-    return () => window.removeEventListener("scroll", updatePosition);
-  }, []);
-  return scrollPosition;
-};
+import { classNames, useScrollPosition } from "../tools";
 
 const Navbar = () => {
   //activate sidebar
 
   //console.logs position of window.offsetY
   const scrollPosition = useScrollPosition();
-  console.log(scrollPosition);
 
   return (
     <header
@@ -66,7 +42,9 @@ const Navbar = () => {
             </li>
             <li className="dropdown">
               <a className="nav-link" href="#">
-                <span>Community </span> <FaChevronDown />
+                <span>
+                  Community <FaChevronDown />
+                </span>
               </a>
               <ul>
                 <li>
