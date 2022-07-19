@@ -1,11 +1,21 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Navbar.css";
 import { FaBars, FaChevronDown } from "react-icons/fa";
 import { classNames, useScrollPosition } from "../tools";
 
 const Navbar = () => {
   //activate sidebar
+  const [sidebar, setSidebar] = useState(false);
+  const [activate, setActivate] = useState();
+
+  useEffect(() => {
+    if (sidebar) {
+      setActivate('navbar-mobile');
+    } else {
+      setActivate('');
+    }
+  }, [sidebar])
 
   //console.logs position of window.offsetY
   const scrollPosition = useScrollPosition();
@@ -23,7 +33,7 @@ const Navbar = () => {
           GUSBAMPS
         </a>
 
-        <nav id="navbar" className="navbar">
+        <nav id="navbar" className={`navbar ${activate}`}>
           <ul>
             <li>
               <a className="nav-link scrollto active" href="#hero">
@@ -64,7 +74,9 @@ const Navbar = () => {
               </a>
             </li>
           </ul>
-          <FaBars className="bi bi-list mobile-nav-toggle" />
+          <FaBars className="bi bi-list mobile-nav-toggle" onClick={() => {
+            setSidebar(!sidebar);
+          }}/>
         </nav>
       </div>
     </header>
