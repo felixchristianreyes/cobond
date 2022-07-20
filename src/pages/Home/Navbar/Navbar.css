@@ -164,9 +164,6 @@
   line-height: 0;
   transition: 0.5s;
 }
-.mobile-nav-toggle.bi-x {
-  color: #fff;
-}
 
 @media (max-width: 991px) {
   .mobile-nav-toggle {

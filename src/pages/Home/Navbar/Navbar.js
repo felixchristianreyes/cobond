@@ -7,7 +7,7 @@ import { classNames, useScrollPosition } from "../tools";
 const Navbar = () => {
   //activate sidebar
   const [sidebar, setSidebar] = useState(false);
-  const [activate, setActivate] = useState();
+  const [activate, setActivate] = useState([]);
 
   useEffect(() => {
     if (sidebar) {
@@ -36,7 +36,7 @@ const Navbar = () => {
         <nav id="navbar" className={`navbar ${activate}`}>
           <ul>
             <li>
-              <a className="nav-link scrollto active" href="#hero">
+              <a className="nav-link scrollto" href="#hero">
                 Home
               </a>
             </li>

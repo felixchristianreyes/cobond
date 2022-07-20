@@ -18,7 +18,7 @@ const Hero = () => (
           </h2>
           <div className="d-flex justify-content-center justify-content-lg-start">
             <a href="#about" className="nav-link btn-get-started scrollto">
-              Get Started
+              Find A Toilet
             </a>
           </div>
         </div>
