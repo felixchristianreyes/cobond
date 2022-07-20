@@ -1,0 +1,21 @@
+.navbar a {
+    color: #000;
+}
+
+
+
+.loginBtn {
+    margin: 0;
+    padding: 0;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 992px) {
+    .loginBtn {
+        margin: 0;
+        padding: 0;
+        border: none;
+        border-radius: none;
+    }
+  }
