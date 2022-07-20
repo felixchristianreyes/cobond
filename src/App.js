@@ -4,6 +4,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import Home from "./pages/Home/Home";
+import Main from "./pages/Main/Main";
 
 
 function App() {
@@ -16,7 +17,8 @@ function App() {
 
     <div className="App">
       
-      <Home />
+      {/* <Home /> */}
+      <Main />
 
     </div>
   );
