@@ -1,11 +1,15 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import './Main.css';
+import React from "react";
+import MainNav from "../Main/MainNav/MainNav";
+import "./Main.css";
+import Footer from "../Home/Footer/Footer";
+import GoogleMapsComponent from "./GoogleMapsComponent/GoogleMapsComponent";
 
 const Main = () => (
-  <div className="Main" data-testid="Main">
-    Main Component
-  </div>
+  <>
+    <MainNav />
+    <GoogleMapsComponent />
+    <Footer />
+  </>
 );
 
 Main.propTypes = {};
