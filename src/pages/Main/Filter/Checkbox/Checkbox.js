@@ -5,7 +5,7 @@ function Checkbox() {
   const type = 'checkbox';
 
   return (
-    <Form className="h-25">
+    <div className="h-25">
       
         <div key={`inline-${type}`} className="mx-3">
           <Form.Check
@@ -31,7 +31,7 @@ function Checkbox() {
           />
         </div>
     
-    </Form>
+    </div>
   );
 }
 

@@ -6,6 +6,10 @@
     color: #000 !important;
 }
 
+.navbar {
+    height: 4rem;
+}
+
 .loginBtn {
     margin: 0;
     padding: 0;

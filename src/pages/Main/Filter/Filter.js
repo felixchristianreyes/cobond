@@ -5,8 +5,8 @@ import StarRating from "./StarRating/StarRating";
 import Checkbox from "./Checkbox/Checkbox";
 
 const Filter = () => (
-  <Container className="filterContainer mb-5">
-    <Form>
+  <Form>
+    <Container className="filterContainer mb-5">
       <h3 className="text-center border-bottom mb-5">Sort By</h3>
       <Card className="filterCard">
         <Container className="text-center p-2">
@@ -21,8 +21,8 @@ const Filter = () => (
       <div className="d-flex justify-content-center mt-3 pb-3 ">
         <Button variant="outline-dark">Search</Button>
       </div>
-    </Form>
-  </Container>
+    </Container>
+  </Form>
 );
 
 Filter.propTypes = {};

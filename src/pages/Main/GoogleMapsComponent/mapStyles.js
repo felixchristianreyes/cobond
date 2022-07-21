@@ -1,4 +1,5 @@
-export default styles [
+/* eslint-disable import/no-anonymous-default-export */
+export default [
   {
     featureType: "all",
     elementType: "all",
