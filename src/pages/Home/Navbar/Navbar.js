@@ -4,6 +4,8 @@ import "./Navbar.css";
 import { FaBars, FaChevronDown } from "react-icons/fa";
 import { classNames, useScrollPosition } from "../tools";
 
+
+
 const Navbar = () => {
   //activate sidebar
   const [sidebar, setSidebar] = useState(false);

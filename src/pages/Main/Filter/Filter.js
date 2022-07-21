@@ -7,18 +7,20 @@ import Checkbox from "./Checkbox/Checkbox";
 const Filter = () => (
   <Container className="filterContainer mb-5">
     <Form>
-      <h2>Filter By:</h2>
+      <h3 className="text-center border-bottom">Filter By</h3>
       <Card className="filterCard">
-        <Container className="d-flex p-2">
-          <p className="p-0 m-0">Ratings:</p> <StarRating />
+        <Container className="text-center p-2">
+          <p className="p-0 m-0">Ratings</p> <StarRating />
         </Container>
       </Card>
       <Card className="filterCard">
-        <Container className="d-flex p-2">
-          <p className="p-0 m-0">Cleanliness:</p> <Checkbox />
+        <Container className="text-center p-2">
+          <p className="p-0 mb-3">Cleanliness</p> <Checkbox />
         </Container>
       </Card>
-      <Button size="lg" >Search</Button>
+      <div className="d-flex justify-content-center mt-3 pb-3 border-bottom">
+        <Button variant="outline-dark">Search</Button>
+      </div>
     </Form>
   </Container>
 );

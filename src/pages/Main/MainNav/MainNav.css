@@ -1,8 +1,10 @@
-.navbar a {
-    color: #000;
+.bg-dark {
+    background-color: #37517E !important;
 }
 
-
+.dropdown-item {
+    color: #000 !important;
+}
 
 .loginBtn {
     margin: 0;
