@@ -6,6 +6,7 @@ import { useEffect } from "react";
 import Home from "./pages/Home/Home";
 import Main from "./pages/Main/Main";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ErrorPage from "./pages/ErrorPage";
 
 const App = () => {
   useEffect(() => {
@@ -19,7 +20,7 @@ const App = () => {
         <Routes>
           <Route path="/" index element={<Home />} />
           <Route path="locator" element={<Main />} />
-          <Route path="*" element={<Main />} />
+          <Route path="*" element={<ErrorPage />} />
         </Routes>
       </BrowserRouter>
     </div>
