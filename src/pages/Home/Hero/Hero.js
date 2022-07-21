@@ -1,6 +1,6 @@
 import React from "react";
 import "./Hero.css";
-
+import { Link } from "react-router-dom";
 
 const Hero = () => (
   <section id="hero" className="d-flex align-items-center" data-testid="Hero">
@@ -17,7 +17,7 @@ const Hero = () => (
             For people who have frequent calls with nature.
           </h2>
           <div className="d-flex justify-content-center justify-content-lg-start">
-            <a href="#about" className="nav-link btn-get-started scrollto">
+            <a href="locator" className="nav-link btn-get-started scrollto">
               Find A Toilet
             </a>
           </div>

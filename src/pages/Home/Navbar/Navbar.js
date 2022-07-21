@@ -31,7 +31,7 @@ const Navbar = () => {
       data-testid="Navbar"
     >
       <div className="container d-flex align-items-center">
-        <a href="index.html" className="logo me-auto">
+        <a href="/" className="logo me-auto">
           GUSBAMPS
         </a>
 
