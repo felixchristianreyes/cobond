@@ -4,10 +4,9 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import "./MainNav.css";
-
+import LoginRegister from "../LoginRegisterModal/LoginRegisterModal";
 
 const MainNav = () => {
-
   return (
     <>
       <Navbar
@@ -16,6 +15,7 @@ const MainNav = () => {
         variant="dark"
         expand="lg"
         datatest-id="MainNav"
+        className="navbar"
       >
         <Container>
           <Navbar.Brand href="#home">GUSBAMPS</Navbar.Brand>
@@ -25,7 +25,7 @@ const MainNav = () => {
               <Nav.Link href="#home">Home</Nav.Link>
               <NavDropdown
                 variant="light"
-                title="Dropdown"
+                title="Community"
                 id="basic-nav-dropdown"
               >
                 <NavDropdown.Item href="#action/3.1">
@@ -36,11 +36,8 @@ const MainNav = () => {
                   Propose Location
                 </NavDropdown.Item>
               </NavDropdown>
-
-              <Nav.Link className="loginBtn" href="#login">
-                Login/Register
-              </Nav.Link>
             </Nav>
+            <LoginRegister />
           </Navbar.Collapse>
         </Container>
       </Navbar>
