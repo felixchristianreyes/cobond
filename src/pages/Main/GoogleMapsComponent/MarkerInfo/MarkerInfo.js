@@ -7,7 +7,7 @@ const UnfilledStar = BsStar;
 const MarkerInfo = () => {
   return (
     <div class=" container d-flex justify-content-center align-items-center">
-      <div class="card pt-3">
+      <div class="markerCard pt-3">
         <div class="d-flex justify-content-between align-items-center">
           <div class="ratings rating-color"></div>
           <FilledStar />

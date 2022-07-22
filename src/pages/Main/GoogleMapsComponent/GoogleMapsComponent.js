@@ -46,7 +46,7 @@ function GoogleMapsComponent() {
   }
   return (
     <>
-      <h1>
+      <h1 className="gmcH1">
         Toilet Locator
         <span role="img" aria-label="toilet">
           🚽
@@ -54,7 +54,7 @@ function GoogleMapsComponent() {
       </h1>
 
       <GoogleMap
-        mapContainerStyle={{ width: "100vw", height: "89vh" }}
+        mapContainerClassName="mapStyle"
         center={center}
         zoom={18}
         options={options}

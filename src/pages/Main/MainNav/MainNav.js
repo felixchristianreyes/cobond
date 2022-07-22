@@ -8,7 +8,7 @@ import LoginRegister from "../LoginRegisterModal/LoginRegisterModal";
 
 const MainNav = () => {
   return (
-    <>
+    <div className="mainNav">
       <Navbar
         sticky="top"
         bg="dark"
@@ -41,7 +41,7 @@ const MainNav = () => {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-    </>
+    </div>
   );
 };
 
