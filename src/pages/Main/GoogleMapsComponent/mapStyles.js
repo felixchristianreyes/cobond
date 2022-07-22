@@ -91,29 +91,8 @@ export default [
     ],
   },
   {
-    featureType: "landscape",
-    elementType: "geometry",
-    stylers: [
-      {
-        color: "#000000",
-      },
-      {
-        lightness: 20,
-      },
-    ],
-  },
-  {
-    featureType: "landscape",
+    featureType: "landscape.man_made",
     elementType: "geometry.fill",
-    stylers: [
-      {
-        color: "#4d6059",
-      },
-    ],
-  },
-  {
-    featureType: "landscape",
-    elementType: "geometry.stroke",
     stylers: [
       {
         color: "#4d6059",

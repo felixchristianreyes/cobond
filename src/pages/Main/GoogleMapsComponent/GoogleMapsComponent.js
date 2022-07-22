@@ -1,14 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
+import "./GoogleMapsComponent.css";
+import gMapStyles from "./mapStyles";
 import {
+  useJsApiLoader,
   GoogleMap,
-  LoadScript,
   Marker,
   InfoWindow,
 } from "@react-google-maps/api";
-import "./GoogleMapsComponent.css";
-import gMapStyles from "./mapStyles";
-
-//static Markers
+import MarkerInfo from "./MarkerInfo/MarkerInfo";
 const markers = {
   marker1: {
     lat: 14.55234,
@@ -35,9 +34,16 @@ const center = {
   lng: 121.073485,
 };
 
-const libraries = ["places"];
+function GoogleMapsComponent() {
+  const [selected, setSelected] = useState(null);
 
-function MyComponent() {
+  const { isLoaded } = useJsApiLoader({
+    googleMapsApiKey: "AIzaSyBJl-1Frpgrjv8FlvBj-Fr5kkbFA3mDNAc",
+  });
+
+  if (!isLoaded) {
+    return <div>no work</div>;
+  }
   return (
     <>
       <h1>
@@ -46,27 +52,60 @@ function MyComponent() {
           🚽
         </span>
       </h1>
-      <LoadScript
-        googleMapsApiKey="AIzaSyBJl-1Frpgrjv8FlvBj-Fr5kkbFA3mDNAc"
-        libraries={libraries}
+
+      <GoogleMap
+        mapContainerStyle={{ width: "100vw", height: "89vh" }}
+        center={center}
+        zoom={18}
+        options={options}
       >
-        <GoogleMap
-          mapContainerClassName="mapStyle mb-5"
-          center={center}
-          zoom={16}
-          options={options}
-        >
-          {/* Child components, such as markers, info windows, etc. */}
-          <>
-            <Marker
-              position={{ lat: 14.55, lng: 121.07 }}
-            />
-            
-          </>
-        </GoogleMap>
-      </LoadScript>
+        {/* Child components, such as markers, info windows, etc. */}
+        <Marker position={center} />
+
+        <Marker
+          position={markers.marker1}
+          icon={{
+            url: "/toiletIcon.svg",
+            scaledSize: new window.google.maps.Size(25, 25),
+          }}
+          onClick={() => {
+            setSelected(markers.marker1);
+          }}
+        />
+        <Marker
+          position={markers.marker2}
+          icon={{
+            url: "/toiletIcon.svg",
+            scaledSize: new window.google.maps.Size(25, 25),
+          }}
+          onClick={() => {
+            setSelected(markers.marker2);
+          }}
+        />
+        <Marker
+          position={markers.marker3}
+          icon={{
+            url: "/toiletIcon.svg",
+            scaledSize: new window.google.maps.Size(25, 25),
+          }}
+          onClick={() => {
+            setSelected(markers.marker3);
+          }}
+        />
+
+        {selected ? (
+          <InfoWindow
+            position={{ lat: selected.lat + 0.00001, lng: selected.lng }}
+            onCloseClick={() => {
+              setSelected(null);
+            }}
+          >
+            <MarkerInfo />
+          </InfoWindow>
+        ) : null}
+      </GoogleMap>
     </>
   );
 }
 
-export default React.memo(MyComponent);
+export default GoogleMapsComponent;

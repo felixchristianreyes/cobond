@@ -2,7 +2,6 @@ import React from "react";
 import "./Filter.css";
 import { Container, Card, Button, Form } from "react-bootstrap";
 import StarRating from "./StarRating/StarRating";
-import Checkbox from "./Checkbox/Checkbox";
 
 const Filter = () => (
   <Form>
@@ -15,7 +14,7 @@ const Filter = () => (
       </Card>
       <Card className="filterCard">
         <Container className="text-center p-2">
-          <p className="p-0 mb-3 fs-4">Cleanliness</p> <Checkbox />
+          <p className="p-0 mb-3 fs-4">Cleanliness</p> <StarRating />
         </Container>
       </Card>
       <div className="d-flex justify-content-center mt-3 pb-3 ">
