@@ -11,10 +11,10 @@ const Hero = () => (
           data-aos="fade-up"
           data-aos-delay="200"
         >
-          <h1>One-stop solution for those goosebumps</h1>
+          <h1>Find your comfort in just a click</h1>
           <h2>
             Community generated public restrooms. <br />
-            For people who have frequent calls with nature.
+            By the people for the people.
           </h2>
           <div className="d-flex justify-content-center justify-content-lg-start">
             <a href="locator" className="nav-link btn-get-started scrollto">
