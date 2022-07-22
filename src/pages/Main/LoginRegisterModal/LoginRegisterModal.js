@@ -77,9 +77,7 @@ const LoginRegister = () => {
                 <BsTwitter />
               </button>
 
-              <button type="button" className="btn btn-link btn-floating mx-1">
-                <BsGithub />
-              </button>
+              
             </div>
           </form>
         </Modal.Body>
