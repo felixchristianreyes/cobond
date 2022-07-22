@@ -8,8 +8,7 @@ const Newsletter = () => (
         <div className="col-lg-6">
           <h4>Join Our Newsletter</h4>
           <p>
-            Tamen quem nulla quae legam multos aute sint culpa legam noster
-            magna
+            Subscribe to know about the latest news
           </p>
           <form action="" method="post">
             <input type="email" name="email" />

@@ -11,14 +11,14 @@ const Footer = () => (
           <div className="col-lg-3 col-md-6 footer-contact">
             <h3>Gusbamps</h3>
             <p>
-              A108 Adam Street <br />
-              New York, NY 535022
+              0601 Pluto St <br />
+              Bacoor, Cavite 4102
               <br />
-              United States <br />
+              Phillippines <br />
               <br />
-              <strong>Phone:</strong> +1 5589 55488 55
+              <strong>Phone:</strong> +639 454 896 481
               <br />
-              <strong>Email:</strong> info@example.com
+              <strong>Email:</strong> gusbamps.company@gmail.com
               <br />
             </p>
           </div>
