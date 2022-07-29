@@ -3,7 +3,6 @@ import Navbar from "./Navbar/Navbar";
 import Hero from "./Hero/Hero";
 import AboutUs from "./AboutUs/AboutUs";
 import Services from "./Services/Services";
-import Newsletter from "./Newsletter/Newsletter";
 import Footer from "./Footer/Footer";
 
 const Home = () => {
@@ -13,7 +12,6 @@ const Home = () => {
       <Hero />
       <AboutUs />
       <Services />
-      <Newsletter />
       <Footer />
     </>
   );
